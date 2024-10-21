@@ -1,5 +1,6 @@
 import os
 import zipfile
+import sys
 
 def compress_files(directory, output_zip):
     # Create a zip file
@@ -15,6 +16,10 @@ def compress_files(directory, output_zip):
 
 # Example usage
 if __name__ == "__main__":
-    directory_to_compress = 'path/to/your/directory'  # Change this to your directory
-    output_zip_file = 'compressed_files.zip'  # Name of the output zip file
+    if len(sys.argv) != 3:
+        print("Usage: python compress.py <directory_to_compress> <output_zip_file>")
+        sys.exit(1)
+
+    directory_to_compress = sys.argv[1]
+    output_zip_file = sys.argv[2]
     compress_files(directory_to_compress, output_zip_file)
