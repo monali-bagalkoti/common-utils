@@ -11,9 +11,12 @@ This will compress the specified directory into the provided ZIP file name.
 Simple password manager demonstrates how to securely store passwords and retrieve them when needed.
 
 Features
-Add Password: Store a new password in an encrypted format.
-View Password: Retrieve and decrypt a password for a specific service.
-Delete Password: Remove a stored password from the manager.
+
+* Add Password: Store a new password in an encrypted format.
+
+* View Password: Retrieve and decrypt a password for a specific service.
+
+* Delete Password: Remove a stored password from the manager.
 
 Requirements
 
