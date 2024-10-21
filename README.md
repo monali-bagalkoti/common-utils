@@ -15,6 +15,11 @@ Add Password: Store a new password in an encrypted format.
 View Password: Retrieve and decrypt a password for a specific service.
 Delete Password: Remove a stored password from the manager.
 
+Requirements
+Make sure you have the cryptography library installed. You can install it using pip:
+
+``pip install cryptography``
+
 Run the script from the command line:
 
 ``python secure_password_manager.py``
